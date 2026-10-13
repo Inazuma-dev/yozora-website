@@ -9,6 +9,8 @@
   --signal: #d8f27a;
   --mono: 'DM Mono', monospace;
   --sans: 'Manrope', sans-serif;
+  --display: 'Rye', Georgia, serif;
+  --script: 'Cabin Sketch', 'Trebuchet MS', cursive;
 }
 
 * { box-sizing: border-box; }
@@ -37,7 +39,7 @@ body::before {
   pointer-events: none;
   content: '';
   opacity: 0.13;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='[...]
 }
 
 a { color: inherit; }
@@ -80,7 +82,8 @@ a { color: inherit; }
   backdrop-filter: blur(14px) saturate(165%);
   transition: filter 180ms ease;
   cursor: pointer;
-  font-family: var(--sans);
+  font-family: var(--display);
+  letter-spacing: 0.08em;
 }
 
 .wordmark:hover {
@@ -98,6 +101,8 @@ a { color: inherit; }
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: wordmark-glass 9s ease-in-out infinite alternate;
+    font-family: var(--display);
+    letter-spacing: 0.08em;
   }
 }
 
@@ -144,7 +149,15 @@ a { color: inherit; }
 }
 
 .waitlist-kicker { margin: 0 0 15px; color: var(--mint); font: 9px var(--mono); }
-.waitlist-panel h2 { margin: 0; color: #f0f6f2; font-size: 26px; line-height: 1.2; font-weight: 600; }
+.waitlist-panel h2 {
+  margin: 0;
+  color: #f0f6f2;
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 600;
+  font-family: var(--display);
+  letter-spacing: 0.04em;
+}
 .waitlist-copy { max-width: 320px; margin: 11px 0 19px; color: #aab8b0; font-size: 12px; line-height: 1.7; }
 .waitlist-link { display: inline-flex; align-items: center; gap: 8px; color: var(--mint); font-size: 11px; font-weight: 700; text-decoration: none; }
 .waitlist-link:hover { color: #e0ffef; }
@@ -200,9 +213,15 @@ h1 {
   font-size: clamp(48px, 6.2vw, 78px);
   line-height: 1.04;
   font-weight: 500;
+  font-family: var(--display);
+  letter-spacing: 0.02em;
 }
 
-h1 span { color: #8eaaa0; }
+h1 span {
+  color: #8eaaa0;
+  font-family: var(--script);
+  letter-spacing: 0.04em;
+}
 
 .intro {
   max-width: 405px;
@@ -238,7 +257,13 @@ h1 span { color: #8eaaa0; }
   font-size: 9px;
 }
 
-.launch-title { margin: 0; font-size: 13px; font-weight: 600; }
+.launch-title {
+  margin: 0;
+  font-size: clamp(16px, 2vw, 22px);
+  font-weight: 600;
+  font-family: var(--script);
+  letter-spacing: 0.04em;
+}
 
 .cursor { margin-left: 3px; color: var(--mint); animation: blink 1.1s steps(2) infinite; }
 
@@ -328,6 +353,8 @@ h1 span { color: #8eaaa0; }
   border-radius: 3px;
   color: #b3c5bb;
   font-size: 8px;
+  font-family: var(--display);
+  letter-spacing: 0.08em;
 }
 
 .logo-lockup img { width: 25px; height: 22px; border-radius: 2px; object-fit: contain; }
@@ -397,9 +424,11 @@ h1 span { color: #8eaaa0; }
   font-size: clamp(34px, 4.2vw, 52px);
   line-height: 1.12;
   font-weight: 500;
+  font-family: var(--display);
+  letter-spacing: 0.02em;
 }
 
-.roadmap h2 span { color: #8eaaa0; }
+.roadmap h2 span { color: #8eaaa0; font-family: var(--script); letter-spacing: 0.04em; }
 
 .roadmap-note {
   max-width: 330px;
@@ -422,7 +451,14 @@ h1 span { color: #8eaaa0; }
 
 .roadmap-number, .planned-label { color: var(--muted); font-family: var(--mono); font-size: 8px; }
 .roadmap-number { color: var(--mint); }
-.roadmap-item h3 { margin: 0 0 5px; font-size: 13px; font-weight: 600; }
+.roadmap-item h3 {
+  margin: 0 0 5px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--display);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
 .roadmap-item p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.6; }
 .planned-label { padding: 7px 9px; border: 1px solid var(--line); border-radius: 3px; }
 
