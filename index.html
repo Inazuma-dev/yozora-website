@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090b0d" />
+    <meta
+      name="description"
+      content="Meet Yozora, an open-source AI-powered browser for iOS 15.0–16.x.x. Early development; not ready for everyday use."
+    />
+    <title>Yozora — An AI Browser for iOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar" aria-label="Yozora">
+        <button class="wordmark" type="button" aria-expanded="false" aria-controls="waitlist-panel">
+          <img class="wordmark-logo" src="assets/yozora-logo.jpg" alt="" />
+          <span>yozora</span>
+        </button>
+        <div class="status"><span class="status-dot" aria-hidden="true"></span>WORK IN PROGRESS</div>
+        <section class="waitlist-panel" id="waitlist-panel" aria-labelledby="waitlist-title" hidden>
+          <button class="waitlist-close" type="button" aria-label="Close waitlist panel">×</button>
+          <p class="waitlist-kicker">YOZORA / EARLY ACCESS</p>
+          <h2 id="waitlist-title">Join the waitlist.</h2>
+          <p class="waitlist-copy">Be first to hear when Yozora is ready. Sign-ups are opening soon.</p>
+          <a class="waitlist-link" href="https://x.com/Inazuma_dev" target="_blank" rel="noreferrer">
+            Follow the build on X <span aria-hidden="true">↗</span>
+          </a>
+        </section>
+      </header>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span>01</span> OPEN-SOURCE IOS BROWSER</p>
+            <h1 id="hero-title">Yozora,<br /><span>AI browser.</span></h1>
+            <p class="intro">
+              Yozora is an experimental, open-source AI-powered browser in development
+              for iOS 15.0–16.x.x. It aims to make browsing more intuitive, personal,
+              and intelligent.
+            </p>
+            <div class="launch-note">
+              <span class="launch-mark" aria-hidden="true">↗</span>
+              <div>
+                <p class="launch-label">DEVELOPMENT STATUS</p>
+                <p class="launch-title">Early development<span class="cursor" aria-hidden="true">_</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-art" aria-label="Yozora browser preview placeholder">
+            <div class="art-grid" aria-hidden="true"></div>
+            <div class="art-index"><span>Y/01</span><span>CONCEPT / AI TOOLS PLANNED</span></div>
+            <div class="glass-window">
+              <div class="window-top">
+                <div class="window-controls" aria-hidden="true"><i></i><i></i><i></i></div>
+                <span class="window-address">yozora://ask-this-page</span>
+                <span class="window-menu" aria-hidden="true">•••</span>
+              </div>
+              <div class="window-content">
+                <div class="logo-lockup">
+                  <img src="assets/yozora-logo.jpg" alt="" />
+                  <span>YOZORA</span>
+                </div>
+                <p class="window-kicker">ASK THIS PAGE</p>
+                <div class="window-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+                <div class="window-foot"><span>DESIGNED FOR THE IN-BETWEEN</span><span>15—16</span></div>
+              </div>
+            </div>
+            <div class="art-caption"><span>FIG. 01</span><span>AN EARLY CONCEPT</span></div>
+            <span class="art-coordinate coordinate-top" aria-hidden="true">35° 41' 22.2" N</span>
+            <span class="art-coordinate coordinate-bottom" aria-hidden="true">139° 41' 30.1" E</span>
+          </div>
+        </section>
+
+        <section class="details" aria-label="Project details">
+          <div class="detail-item">
+            <span class="detail-label">TARGET PLATFORM</span>
+            <span class="detail-value">iOS 15.0–16.x.x</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">PROJECT STATUS</span>
+            <span class="detail-value"><span class="detail-dot" aria-hidden="true"></span>Not ready for everyday use</span>
+          </div>
+          <a class="detail-item repo-link" href="https://github.com/Inazuma-dev/Yozora" target="_blank" rel="noreferrer">
+            <span class="detail-label">OPEN SOURCE</span>
+            <span class="detail-value">Explore the repository <span aria-hidden="true">↗</span></span>
+          </a>
+        </section>
+
+        <section class="roadmap" aria-labelledby="roadmap-title">
+          <div class="roadmap-heading">
+            <div>
+              <p class="eyebrow"><span>02</span> THE VISION</p>
+              <h2 id="roadmap-title">Browsing, with<br /><span>more possibility.</span></h2>
+            </div>
+            <p class="roadmap-note">
+              These are goals for Yozora, not features that are available today.
+              The browser is in early development.
+            </p>
+          </div>
+          <div class="roadmap-list">
+            <article class="roadmap-item">
+              <span class="roadmap-number">01</span>
+              <div><h3>Ask this page</h3><p>Explore webpage content with AI assistance.</p></div>
+              <span class="planned-label">PLANNED</span>
+            </article>
+            <article class="roadmap-item">
+              <span class="roadmap-number">02</span>
+              <div><h3>AI-powered tools</h3><p>Search assistance and concise page summaries.</p></div>
+              <span class="planned-label">PLANNED</span>
+            </article>
+            <article class="roadmap-item">
+              <span class="roadmap-number">03</span>
+              <div><h3>Your browsing, organized</h3><p>Tabs, bookmarks, and history in one place.</p></div>
+              <span class="planned-label">PLANNED</span>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>YOZORA <span class="footer-divider">/</span> OPEN SOURCE. EARLY DEVELOPMENT.</span>
+        <nav class="social-links" aria-label="Social profiles">
+          <a href="https://x.com/Inazuma_dev" target="_blank" rel="noreferrer">X <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/Inazuma-dev" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </nav>
+      </footer>
+    </div>
+    <script>
+      const waitlistToggle = document.querySelector('.wordmark');
+      const waitlistPanel = document.querySelector('#waitlist-panel');
+      const waitlistClose = document.querySelector('.waitlist-close');
+      const topbar = document.querySelector('.topbar');
+
+      function setWaitlistOpen(isOpen) {
+        waitlistPanel.hidden = !isOpen;
+        waitlistToggle.setAttribute('aria-expanded', String(isOpen));
+        topbar.classList.toggle('waitlist-open', isOpen);
+      }
+
+      waitlistToggle.addEventListener('click', () => {
+        setWaitlistOpen(waitlistPanel.hidden);
+      });
+      waitlistClose.addEventListener('click', () => setWaitlistOpen(false));
+      document.addEventListener('click', (event) => {
+        if (!waitlistPanel.hidden && !event.target.closest('.topbar')) setWaitlistOpen(false);
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !waitlistPanel.hidden) {
+          setWaitlistOpen(false);
+          waitlistToggle.focus();
+        }
+      });
+    </script>
+  </body>
+</html>
