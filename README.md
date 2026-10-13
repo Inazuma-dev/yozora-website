@@ -17,4 +17,4 @@ GitHub Pages is free for public repositories. No paid hosting or framework is re
 
 ## Before publishing
 
-The browser repository link in `index.html` points to [Inazuma-dev/Yozora](https://github.com/Inazuma-dev/Yozora). The Yozora logo is stored locally at `assets/yozora-logo.jpg`. Social links in the footer point to [X](https://x.com/Inazuma_dev) and [GitHub](https://github.com/Inazuma-dev).
+The browser repository link in `index.html` points to [Inazuma-dev/Yozora](https://github.com/Inazuma-dev/Yozora). The Yozora logo is stored locally at `assets/yozora-logo-new.png`. Social links in the footer point to [X](https://x.com/Inazuma_dev) and [GitHub](https://github.com/Inazuma-dev).

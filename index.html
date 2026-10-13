@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#090b0d" />
+    <meta name="theme-color" content="#21191f" />
     <meta
       name="description"
       content="Meet Yozora, an open-source AI-powered browser for iOS 15.0–16.x.x. Early development; not ready for everyday use."
@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Rye&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Rye&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -21,17 +21,23 @@
     <div class="page-shell">
       <header class="topbar" aria-label="Yozora">
         <button class="wordmark" type="button" aria-expanded="false" aria-controls="waitlist-panel">
-          <img class="wordmark-logo" src="assets/yozora-logo.jpg" alt="" />
+          <img class="wordmark-logo" src="assets/yozora-logo-new.png" alt="" />
           <span>yozora</span>
         </button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#vision">Vision</a>
+          <a href="#plan">Six-month plan</a>
+          <a href="https://github.com/Inazuma-dev/Yozora" target="_blank" rel="noreferrer">Open source</a>
+        </nav>
         <div class="status"><span class="status-dot" aria-hidden="true"></span>WORK IN PROGRESS</div>
+        <a class="nav-cta" href="#repository">Explore Yozora</a>
         <section class="waitlist-panel" id="waitlist-panel" aria-labelledby="waitlist-title" hidden>
           <button class="waitlist-close" type="button" aria-label="Close waitlist panel">×</button>
           <p class="waitlist-kicker">YOZORA / EARLY ACCESS</p>
           <h2 id="waitlist-title">Join the waitlist.</h2>
           <p class="waitlist-copy">Be first to hear when Yozora is ready. Sign-ups are opening soon.</p>
           <a class="waitlist-link" href="https://x.com/Inazuma_dev" target="_blank" rel="noreferrer">
-            Follow the build on X <span aria-hidden="true">↗</span>
+            Follow the build on X
           </a>
         </section>
       </header>
@@ -46,8 +52,12 @@
               for iOS 15.0–16.x.x. It aims to make browsing more intuitive, personal,
               and intelligent.
             </p>
+            <div class="hero-actions">
+              <a class="primary-action" href="#repository">Explore the project</a>
+              <a class="secondary-action" href="#plan">See the six-month plan</a>
+            </div>
             <div class="launch-note">
-              <span class="launch-mark" aria-hidden="true">↗</span>
+              <span class="launch-mark" aria-hidden="true">01</span>
               <div>
                 <p class="launch-label">DEVELOPMENT STATUS</p>
                 <p class="launch-title">Early development<span class="cursor" aria-hidden="true">_</span></p>
@@ -55,23 +65,46 @@
             </div>
           </div>
 
-          <div class="hero-art" aria-label="Yozora browser preview placeholder">
+          <div class="hero-art" aria-label="Yozora browser concept preview">
             <div class="art-grid" aria-hidden="true"></div>
             <div class="art-index"><span>Y/01</span><span>CONCEPT / AI TOOLS PLANNED</span></div>
-            <div class="glass-window">
-              <div class="window-top">
-                <div class="window-controls" aria-hidden="true"><i></i><i></i><i></i></div>
-                <span class="window-address">yozora://ask-this-page</span>
-                <span class="window-menu" aria-hidden="true">•••</span>
-              </div>
-              <div class="window-content">
-                <div class="logo-lockup">
-                  <img src="assets/yozora-logo.jpg" alt="" />
-                  <span>YOZORA</span>
+            <div class="concept-phone" role="img" aria-label="Yozora new-tab concept with tracker blocking, top sites, recent tabs, and search controls">
+              <div class="phone-screen">
+                <div class="phone-island"></div>
+                <div class="phone-status-bar"><span>9:41</span><span>● ● ▰</span></div>
+                <div class="phone-home-controls">
+                  <div class="privacy-pill"><span class="privacy-shield" aria-hidden="true">✓</span><span><strong>9.9K</strong><small>ads & trackers blocked</small></span></div>
+                  <span class="round-tool" aria-hidden="true">◷</span>
+                  <span class="round-tool" aria-hidden="true">▤</span>
                 </div>
-                <p class="window-kicker">ASK THIS PAGE</p>
-                <div class="window-lines" aria-hidden="true"><i></i><i></i><i></i></div>
-                <div class="window-foot"><span>DESIGNED FOR THE IN-BETWEEN</span><span>15—16</span></div>
+                <div class="phone-page">
+                  <div class="phone-section-heading"><h3>Top sites</h3></div>
+                  <div class="site-grid" aria-hidden="true">
+                    <span class="site-tile"><i class="site-icon site-search">⌕</i></span>
+                    <span class="site-tile"><i class="site-icon site-spark">✦</i></span>
+                    <span class="site-tile"><i class="site-icon site-read">▤</i></span>
+                    <span class="site-tile"><i class="site-icon site-orbit">◌</i></span>
+                    <span class="site-tile"><i class="site-icon site-letter">N</i></span>
+                    <span class="site-tile"><i class="site-icon site-letter site-letter-mint">R</i></span>
+                    <span class="site-tile"><i class="site-icon site-letter">A</i></span>
+                    <span class="site-tile"><i class="site-icon site-save">☆</i></span>
+                  </div>
+                  <div class="phone-section-heading compact-heading"><h3>Recently closed</h3><span>Clear all</span></div>
+                  <div class="closed-tab">
+                    <span class="closed-mark">Y</span>
+                    <span><small>inazuma-dev.github.io</small><strong>Yozora — An AI Browser</strong></span>
+                  </div>
+                  <div class="phone-section-heading search-heading"><h3>Recent searches</h3><span>Clear all</span></div>
+                  <div class="recent-search"><span aria-hidden="true">⌕</span><span>quiet places in Tokyo</span></div>
+                  <div class="recent-search"><span aria-hidden="true">⌕</span><span>tools for curious minds</span></div>
+                </div>
+                <div class="phone-bottom-tray">
+                  <div class="phone-prompt"><span class="prompt-mark" aria-hidden="true">◉</span><span>Ask anything or navigate</span><span class="prompt-assistant" aria-hidden="true">••</span></div>
+                  <div class="phone-toolbar" aria-hidden="true">
+                    <span>⌕</span><span>⌂</span><span class="toolbar-plus">+</span>
+                    <span class="phone-tab-count">3</span><span>•••</span>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="art-caption"><span>FIG. 01</span><span>AN EARLY CONCEPT</span></div>
@@ -80,7 +113,7 @@
           </div>
         </section>
 
-        <section class="details" aria-label="Project details">
+        <section class="details" id="repository" aria-label="Project details">
           <div class="detail-item">
             <span class="detail-label">TARGET PLATFORM</span>
             <span class="detail-value">iOS 15.0–16.x.x</span>
@@ -91,11 +124,11 @@
           </div>
           <a class="detail-item repo-link" href="https://github.com/Inazuma-dev/Yozora" target="_blank" rel="noreferrer">
             <span class="detail-label">OPEN SOURCE</span>
-            <span class="detail-value">Explore the repository <span aria-hidden="true">↗</span></span>
+            <span class="detail-value">Explore the repository</span>
           </a>
         </section>
 
-        <section class="roadmap" aria-labelledby="roadmap-title">
+        <section class="roadmap" id="vision" aria-labelledby="roadmap-title">
           <div class="roadmap-heading">
             <div>
               <p class="eyebrow"><span>02</span> THE VISION</p>
@@ -123,14 +156,56 @@
               <span class="planned-label">PLANNED</span>
             </article>
           </div>
+
+          <div class="roadmap-plan" id="plan" aria-labelledby="plan-title">
+            <div class="roadmap-plan-heading">
+              <div>
+                <p class="eyebrow"><span>03</span> SIX-MONTH OUTLOOK</p>
+                <h3 class="roadmap-plan-title" id="plan-title">A month-by-month build.</h3>
+              </div>
+              <p class="roadmap-note">A proposed sequence for the next six months. Priorities and timing may change as the project develops.</p>
+            </div>
+            <div class="plan-grid">
+              <article class="plan-card">
+                <div class="plan-card-header"><span class="plan-month">MONTH 01</span><span class="plan-status">FOUNDATION</span></div>
+                <h3>Browser basics</h3>
+                <ul><li>URL and search input</li><li>Navigation, loading, and error states</li></ul>
+              </article>
+              <article class="plan-card">
+                <div class="plan-card-header"><span class="plan-month">MONTH 02</span><span class="plan-status">TABS</span></div>
+                <h3>Multiple tabs</h3>
+                <ul><li>Create, switch, and close tabs</li><li>Restore the browsing session</li></ul>
+              </article>
+              <article class="plan-card">
+                <div class="plan-card-header"><span class="plan-month">MONTH 03</span><span class="plan-status">LIBRARY</span></div>
+                <h3>Bookmarks and history</h3>
+                <ul><li>Save and revisit pages</li><li>Keep browsing data on-device</li></ul>
+              </article>
+              <article class="plan-card">
+                <div class="plan-card-header"><span class="plan-month">MONTH 04</span><span class="plan-status">PAGE TOOLS</span></div>
+                <h3>Ask this page</h3>
+                <ul><li>Summarize the current page</li><li>Prototype questions about its content</li></ul>
+              </article>
+              <article class="plan-card">
+                <div class="plan-card-header"><span class="plan-month">MONTH 05</span><span class="plan-status">AI TOOLS</span></div>
+                <h3>Search and privacy</h3>
+                <ul><li>AI-assisted search flow</li><li>Make external data sharing clear</li></ul>
+              </article>
+              <article class="plan-card">
+                <div class="plan-card-header"><span class="plan-month">MONTH 06</span><span class="plan-status">BETA</span></div>
+                <h3>Test and refine</h3>
+                <ul><li>Test on iOS 15 and 16 devices</li><li>Polish, fix, and prepare a beta</li></ul>
+              </article>
+            </div>
+          </div>
         </section>
       </main>
 
       <footer class="footer">
         <span>YOZORA <span class="footer-divider">/</span> OPEN SOURCE. EARLY DEVELOPMENT.</span>
         <nav class="social-links" aria-label="Social profiles">
-          <a href="https://x.com/Inazuma_dev" target="_blank" rel="noreferrer">X <span aria-hidden="true">↗</span></a>
-          <a href="https://github.com/Inazuma-dev" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://x.com/Inazuma_dev" target="_blank" rel="noreferrer">X</a>
+          <a href="https://github.com/Inazuma-dev" target="_blank" rel="noreferrer">GitHub</a>
         </nav>
       </footer>
     </div>
